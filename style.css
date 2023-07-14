@@ -315,4 +315,11 @@ footer{
     .banner img{
         width: 100%;
     }
+
+    .banner-btn{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 80%;
+    }
    }
