@@ -322,4 +322,9 @@ footer{
         gap: 10px;
         width: 80%;
     }
+
+    form input[type="text"], form input[type="email"], form textarea {
+
+        width: 100%;
+    }
    }
