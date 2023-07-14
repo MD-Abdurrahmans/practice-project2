@@ -5,6 +5,10 @@
        box-sizing: border-box;
    }
 
+   html,body{
+    overflow-x: hidden
+   }
+
    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;800&display=swap');
 
    * {
@@ -127,6 +131,9 @@
 
    .banner img {
        max-width: 500px;
+   }
+   .banner-dec{
+    width: 80%;
    }
 
 
@@ -267,4 +274,45 @@ footer{
     padding: 18px 350px 18px 30px;
     border-radius: 5px;
     width: 461px;
+   }
+
+.hide{
+    display: none;
+}
+
+   /* responsive for mobile device/small device  */
+
+   @media screen and (max-width:576px) {
+    .banner {
+        background-image: none;
+    }
+    .about,.about-info-container,.banner,nav,.nav ul,
+    .skill-container,.resume-container,.footer-container {
+        flex-direction: column;
+    }
+    .about-info-container{
+        gap: 20px;
+    }
+  nav ul{
+    
+     flex-direction: column;
+     gap: 10px;
+  }
+    .what-i-do-des,.resume-column,.footer-container,
+    .about{
+        padding: 20px;
+    }
+    .banner-content .banner-title{
+        font-size: 45px;
+    }
+    .banner-btn{
+     
+         padding: 10px;
+         font-weight: 200;
+         font-size: 15px;
+
+    }
+    .banner img{
+        width: 100%;
+    }
    }
